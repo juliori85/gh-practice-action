@@ -1,10 +1,10 @@
 name: Output Information Issues
 on:
   issues:
-    types: [opened, edited, closed]
+    
 jobs:
     info:
         runs-on: ubuntu-latest
         steps:
             - name: Output GitHub context
-              run: echo "Issue body => ${{ toJson(github.event.issue.body) }}"
+              run: echo "Issue body => ${{ toJson(github.event) }}"
