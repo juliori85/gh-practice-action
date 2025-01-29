@@ -1,6 +1,7 @@
 name: Output Information Issues
 on:
-  issues:
+  #issues:
+  - workflow_dispatch
     
 jobs:
     info:
